@@ -323,6 +323,12 @@ class TLBWrapper(toffee.Bundle):
         req_2_valid, req_2_vaddr = self.rand_req2()
         return req_0_valid, req_0_vaddr, req_1_valid, req_1_vaddr, req_2_valid, req_2_vaddr
 
+    def gene_rand_ptw_resp(self, vpn, s2xlate):
+        """
+        generate random PTW response by s2xlate
+        """
+        # nos2xlate (s2xlate == 0b00)
+
 class TLBrwWrapper(toffee.Bundle):
     """
     Support TLB read/write only.
